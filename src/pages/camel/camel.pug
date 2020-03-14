@@ -1,0 +1,19 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'сошников — рассказ «верблюд»',
+      'сижу дома, делать нечего. написал рассказ на злобу дня',
+      'http://soshnikov-writing.art/img/camel-og.jpg',
+      'article'
+    )
+body.body_light
+    +header()
+    div.content
+        div.article
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/camel.md
+
