@@ -83,6 +83,10 @@
       font: $groteskLarge;
       margin-bottom: 12px;
       
+      &_disabled {
+        color: $gray;
+      }
+      
       @include respond(mobile) {
         font: $groteskLarge;
       }

@@ -1,0 +1,29 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+
+
+doctype html
+html
+    +head(
+      'сошников — дорогие петербуржцы',
+      'повесть о кризисе в свободном петербурге будущего',
+      'http://soshnikov-writing.art/img/dear-citizens-og.jpg',
+      'article'
+    )
+body.body_light
+    +header()
+    div.profile
+        div.profile__title
+            h2 дорогие петербуржцы
+        div.profile__annotation
+            p повесть-сериал о политическом кризисе в независимом петрограде будущего. одна неделя — один эпизод.
+        div.profile__cover
+            img(src="http://soshnikov-writing.art/img/dear-citizens-cover.jpg")
+        div.profile__connotation-title#connotation
+            h2 содержание
+        div.profile__connotation-contents
+            div.profile__connotation-section
+                a.profile__connotation-link(href='dear-citizens-yurka.html') юрка
+                a.profile__connotation-link.profile__connotation-link_disabled(href='') ефграфыч → 6.04.2020
+
