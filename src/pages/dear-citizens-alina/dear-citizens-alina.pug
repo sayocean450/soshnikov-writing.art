@@ -6,9 +6,9 @@ include ../../components/article-breadcrumb/article-breadcrumb
 doctype html
 html
     +head(
-      'сошников — евграфыч',
+      'сошников — алина',
       'второй эпизод повести «дорогие петербуржцы»',
-      'http://soshnikov-writing.art/img/dear-citizens-og-2.jpg',
+      'http://soshnikov-writing.art/img/dear-citizens-og-3.jpg',
       'article'
     )
 body.body_light
@@ -16,8 +16,7 @@ body.body_light
     div.content
         div.article
             +article-breadcrumb('дорогие петербуржцы', 'dear-citizens')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novels/dear-citizens/02-evgraphych.md
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novels/dear-citizens/03-alina.md
             div.article__next
-                a(href="dear-citizens-alina.html") читать следующий эпизод →
                 a(href="dear-citizens.html#connotation") ← вернуться в содержание
 
