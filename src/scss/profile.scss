@@ -76,6 +76,9 @@
       @include respond(mobile) {
         @include col100(0 0 16px 0, column);
       }
+      h2 {
+        margin-bottom: 24px;
+      }
     }
     
     &-link {
