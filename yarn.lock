@@ -1601,9 +1601,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001043:
-  version "1.0.30001048"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001048.tgz#4bb4f1bc2eb304e5e1154da80b93dee3f1cf447e"
-  integrity sha512-g1iSHKVxornw0K8LG9LLdf+Fxnv7T1Z+mMsf0/YYLclQX4Cd522Ap0Lrw6NFqHgezit78dtyWxzlV2Xfc7vgRg==
+  version "1.0.30001050"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001050.tgz#11218af4b6b85dc1089536f31e10e3181e849e71"
+  integrity sha512-OvGZqalCwmapci76ISq5q4kuAskb1ebqF3FEQBv1LE1kWht0pojlDDqzFlmk5jgYkuZN7MNZ1n+ULwe/7MaDNQ==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -6401,9 +6401,9 @@ sockjs@0.3.19:
     uuid "^3.0.1"
 
 soshnikov-writing@^1.0.21:
-  version "1.1.25"
-  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.25.tgz#dde660ad06682ff2d77e7fca0b99b57c12739848"
-  integrity sha512-6WBkdprjmLIZpF0TauFXXbtNIy/GD8giGRTDT3u/a/OAPyFsSVNf4lOgXgflVLAJ7i/g+1+/31EAYrkmX3sBCg==
+  version "1.1.26"
+  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.26.tgz#b55853adf1597888bf6147d7edbd41889c6e82db"
+  integrity sha512-3fQbFzsBAsqMzAZrKWilPn7t7dsMozJ4Jf4UstZKDWArV7Oan6JRXIWwoB13zn0E7D4Ia7L08Us820byikIEmw==
 
 source-list-map@^2.0.0:
   version "2.0.1"
