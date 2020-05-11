@@ -6,9 +6,9 @@ include ../../components/article-breadcrumb/article-breadcrumb
 doctype html
 html
     +head(
-      'сошников — владимир тимурович',
-      'пятый эпизод повести «дорогие петербуржцы»',
-      'http://soshnikov-writing.art/img/dear-citizens-og-5.jpg',
+      'сошников — толик',
+      'шестой эпизод повести «дорогие петербуржцы»',
+      'http://soshnikov-writing.art/img/dear-citizens-og-6.jpg',
       'article'
     )
 body.body_light
@@ -16,8 +16,7 @@ body.body_light
     div.content
         div.article
             +article-breadcrumb('дорогие петербуржцы', 'dear-citizens')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novels/dear-citizens/05-timurich.md
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novels/dear-citizens/06-tolik.md
             div.article__next
-                a(href="dear-citizens-tolik.html") читать следующий эпизод →
                 a(href="dear-citizens.html#connotation") ← вернуться в содержание
 
