@@ -1,0 +1,28 @@
+include ../../components/head/head
+include ../../components/header/header
+
+include ../../components/list-header/list-header
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'артём сошников',
+      'пишу и обозреваю прозу, веду телеграм-канал о реализме «чернотроп»',
+      'http://soshnikov-writing.art/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark')
+    div#index
+        div#main-info
+            p
+                | быстрее всего написать мне в
+                =' '
+                a(href='http://ttttt.me/za_realism' target="blank") телеграм
+                | . важные новости и анонсы я публикую
+                =' '
+                a(href='http://facebook.com/blacktrope' target="blank") на фейсбуке
+                | . староверы без телеграма могут отправить письмо на
+                =" "
+                span.nowrap gin.and.novels🐶protonmail.com
