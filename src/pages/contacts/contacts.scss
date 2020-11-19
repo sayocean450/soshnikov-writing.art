@@ -3,7 +3,7 @@
   grid-column-end: 21;
   grid-row-start: 1;
   
-  @include col80(16px 32px, column);
+  @include col80(16px 0, column);
   font: $groteskExtraLarge;
   font-weight: 700;
   color: $white;
