@@ -4,7 +4,7 @@
   border-top: 1px solid $codGray;
   
   @include respond(mobile) {
-    @include col100(2px 0 24px 0, column);
+    @include col100(8px 0 24px 0, column);
   }
 
   &:hover {
