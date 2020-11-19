@@ -1,0 +1,30 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+
+
+doctype html
+html
+    +head(
+      'сошников — чужие беды',
+      'строгая реалистическая проза о людях, их демонах и окружающей нас боли',
+      'http://soshnikov-writing.art/img/not-mine-og.jpg',
+      'article'
+    )
+body.body_light
+    +header()
+    div.profile
+        div.profile__title
+            h2 чужие беды
+        div.profile__annotation
+            p Реалистическая проза о людях, их демонах, слабостях и проблемах. В каждом рассказе я пытался окунуться в абсолютно разные миры, которые мы так тщательно прячем под колпак глобального однообразия.
+        div.profile__cover
+            img(src="http://soshnikov-writing.art/img/not-mine-cover.jpg")
+        div.profile__connotation-title#connotation
+            h2 содержание
+        div.profile__connotation-contents
+            div.profile__connotation-section
+                a.profile__connotation-link(href='uroboros.html') Уроборос
+                a.profile__connotation-link(href='winger.html') Вингер
+                a.profile__connotation-link(href='camel.html') Верблюд
+
