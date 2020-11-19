@@ -1,20 +1,19 @@
 #contacts {
-    grid-column-start: 1;
-    grid-column-end: 21;
-    grid-row-start: 3;
-    
-    @include col100(120px 0 0 0);
-    font: $groteskExtraLarge;
-    font-weight: 700;
-    color: $white;
-    
-    @include respond(mobile) {
-      @include col100(32px 0 24px 0);
-      font: $groteskMain;
-    }
-    
-    p {
-      margin: 0;
-    }
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  
+  @include col80(64px 32px);
+  font: $groteskExtraLarge;
+  font-weight: 700;
+  color: $white;
+  
+  @include respond(mobile) {
+    @include col100(0);
+    font: $groteskLarge;
   }
   
+  p {
+    margin: 0;
+  }
+}
