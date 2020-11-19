@@ -42,8 +42,8 @@ h1, h2, h5 {
   font-family: 'KTB';
   src: url('../fonts/type.eot');
   src: url('../fonts/type.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/type.woff2') format('woff2'),
-  url('../fonts/type.ttf') format('truetype');
+  //url('../fonts/type.woff2') format('woff2'),
+  url('../fonts/type.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
