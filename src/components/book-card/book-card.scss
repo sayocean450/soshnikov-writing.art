@@ -1,5 +1,5 @@
 .book-card {
-  @include col100(4px 0 16px 0, row);
+  @include col100(4px 32px 16px 32px, row);
   font: $groteskMain;
   border-top: 1px solid $codGray;
   
