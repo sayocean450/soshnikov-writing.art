@@ -1,0 +1,22 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'сошников — пакет',
+      'рассказ из цикла «вот мои селфи»',
+      'http://soshnikov-writing.art/img/selfie-og.jpg',
+      'article'
+    )
+body.body_light
+    +header()
+    div.content
+        div.article
+            +article-breadcrumb('вот мои селфи', 'selfie')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/selfie/bag.md
+            div.article__next
+                a(href="selfie-debut.html") читать следующий эпизод →
+                a(href="selfie.html#connotation") ← вернуться в содержание
