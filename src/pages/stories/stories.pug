@@ -1,0 +1,57 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/pagination/pagination
+
+include ../../components/list-header/list-header
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'артём сошников • рассказы',
+      '',
+      'http://soshnikov-writing.art/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark', 'writing')
+    div#writing
+        div#writing-headline
+            h2 проза
+        div#writing-tabs
+            +writingTags('stories')
+        div#writing-content
+            +bookBlock(
+                'misfortunes', 
+                'Рассказы разных бед', 
+                'Строгая реалистическая проза о людях, их демонах и окружающей нас боли', 
+                'misfortunes.html', 
+                'читать онлайн'
+            )
+            +bookBlock(
+                'not-mine', 
+                'Чужие беды', 
+                'Реалистическая проза о людях, их демонах, слабостях и проблемах', 
+                'not-mine.html', 
+                'читать онлайн'
+            )
+            +bookBlock(
+                'selfie', 
+                'Вот мои селфи', 
+                'Цикл ироничной прозы о мальчике тёме и его детстве в криминальном городе девяностых', 
+                'selfie.html', 
+                'читать онлайн'
+            )
+            +bookBlock(
+                'shoots', 
+                'чужие снимки', 
+                'Сборничек короткой прозы, написанный для бульварно-хулиганского общества «dutch rudder»', 
+                'shoots.html', 
+                'читать онлайн'
+            )
+        div#articles-content
+            div.list
+                +list-header('рассказы вне циклов', 'dark')
+                +bookCard('хоппер', 'рассказ о любви в авторитарной россии ближайшего будущего', 'hopper.html')
+                +bookCard('в тае снег растаял', 'первая бумажная публикация', 'thai.html')

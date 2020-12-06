@@ -45,6 +45,12 @@
     
     &-elem {
       @include colauto(0 0 0 48px);
+
+      &_active {
+        color: $white !important;
+        cursor: default;
+        
+      }
       
       @include respond(mobile) {
         @include colauto(0 0 0 24px);

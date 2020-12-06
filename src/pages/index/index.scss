@@ -24,17 +24,3 @@
     margin: 0;
   }
 }
-
-#writing {
-  grid-column-start: 1;
-  grid-column-end: 21;
-  grid-row-start: 2;
-  
-  @include col100(72px 0 0 0, column);
-}
-
-.writing {
-  &__section {
-    @include col100(0 0 48px 0, column);
-  }
-}

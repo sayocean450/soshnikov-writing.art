@@ -43,6 +43,10 @@ p {
   }
 }
 
+.list {
+  @include col100(0, column);
+}
+
 blockquote {
   color: darken($milanoRed, 10%);
   

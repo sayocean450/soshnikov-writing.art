@@ -1,0 +1,29 @@
+.pagination {
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  
+  @include col100(0);
+  font: $groteskMain;
+  
+  @include respond(mobile) {
+    @include col100(0 0 24px 0);
+    font: $groteskMain;
+  }
+  
+  &__year {
+    @include colauto(0 48px 0 0, column, center);
+    cursor: pointer;
+    
+    @include respond(mobile) {
+      @include colauto(0 32px 0 0, column, center);
+    }
+    
+    &_active {
+      color: $white;
+      @include colauto(0 48px 0 0);
+      border-radius: 30px;
+      cursor: default;
+    }
+  }
+}

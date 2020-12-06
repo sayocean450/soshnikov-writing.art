@@ -1,0 +1,31 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/pagination/pagination
+
+include ../../components/list-header/list-header
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'артём сошников • чернотроп',
+      'литературный марафон по русской народной прозе от гоголя до новых реалистов',
+      'http://soshnikov-writing.art/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark')
+    div#articles
+        div#articles-headline
+            h2 Публицистика
+        div#articles-tabs
+            +pagination('chernotrop')
+        div#articles-desc
+             p 
+                | Литературный марафон по русской народной прозе от гоголя до новых реалистов. Вы можете следить за обновлениями этой рубрики в телеграм-канале 
+                a(href="http://t.me/blacktrope") «Чернотроп».
+        div#articles-content
+            div.list
+                +list-header('2020', 'dark')
+                +bookCard('рассказы разных бед', 'то, что нужно было просто пережить', 'misfortunes.html')
+

@@ -1,0 +1,35 @@
+.book-block {
+    @include col30(0 5% 5% 0, column);
+    font: $groteskMain;
+
+    &__cover {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__headline {
+        @include col100(16px 0 0 0);
+        font: $groteskLarge;
+        color: $white;
+    }
+
+    &__desc {
+        @include col100(8px 0 0 0);
+        font: $groteskMain;
+        color: $white;
+    }
+
+    &__links {
+        @include col100(24px 0 0 0, column);
+    }
+
+    &__button {
+        @include colauto(8px 8px 10px 8px);
+        line-height: 1;
+        background-color: $chromeYellow;
+        color: $black;
+        border-radius: 3px;
+        margin: 0 0 8px 0;
+    }
+}

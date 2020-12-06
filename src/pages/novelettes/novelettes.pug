@@ -1,0 +1,32 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/pagination/pagination
+
+include ../../components/list-header/list-header
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'артём сошников • повести',
+      '',
+      'http://soshnikov-writing.art/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark', 'writing')
+    div#writing
+        div#writing-headline
+            h2 проза
+        div#writing-tabs
+            +writingTags('novelettes')
+        div#writing-content
+            +bookBlock(
+                'dear-citizens', 
+                'Дорогие петербуржцы', 
+                'Повесть-сериал о политическом кризисе в независимом Петрограде будущего. Одна неделя — один эпизод.', 
+                'dear-citizens.html', 
+                'читать онлайн'
+            )
+
