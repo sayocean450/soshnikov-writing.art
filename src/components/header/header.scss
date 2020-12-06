@@ -23,7 +23,7 @@
     @include col20(0);
     
     @include respond(mobile) {
-      @include col90(0 12px, row, flex-start);
+      @include col90(0 12px 0 0, row, flex-start);
     }
     
     &-link {

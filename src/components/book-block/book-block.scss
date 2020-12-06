@@ -2,9 +2,14 @@
     @include col30(0 5% 5% 0, column);
     font: $groteskMain;
 
+    @include respond(mobile) {
+        @include col100(0 0 48px 0, column);
+    }
+
     &__cover {
         img {
             width: 100%;
+            height: auto;
         }
     }
 

@@ -28,5 +28,9 @@
     
     @include col100(48px 0 0 0, row);
     flex-wrap: wrap;
+
+    @include respond(mobile) {
+      @include col100(16px 0 0 0, column);
+    }
   }
 }

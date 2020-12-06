@@ -16,7 +16,7 @@
     cursor: pointer;
     
     @include respond(mobile) {
-      @include colauto(0 32px 0 0, column, center);
+      @include colauto(0 24px 0 0, column, center);
     }
     
     &_active {
@@ -24,6 +24,10 @@
       @include colauto(0 48px 0 0);
       border-radius: 30px;
       cursor: default;
+
+      @include respond(mobile) {
+        @include colauto(0 24px 0 0, column, center);
+      }
     }
   }
 }

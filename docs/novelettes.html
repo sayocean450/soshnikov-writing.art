@@ -16,8 +16,9 @@
 </html>
 <body class="body_dark">
   <div class="header header_dark">
-    <div class="header__logo"><a class="header__logo-link" href="index.html">артём сошников</a></div>
-    <div class="header__menu"></div><a class="header__menu-elem header__menu-elem_active" href="writing.html">проза</a><a class="header__menu-elem" href="articles.html">публицистика</a><a class="header__menu-elem" href="contacts.html">контакты</a>
+    <div class="header__logo"><a class="header__logo-link" href="index.html">сошников</a></div>
+    <div class="header__menu"></div><a class="header__menu-elem header__menu-elem_active" href="writing.html">проза</a>
+    <!--a.header__menu-elem(href="articles.html") публицистика--><a class="header__menu-elem" href="contacts.html">контакты</a>
   </div>
   <div id="writing">
     <div id="writing-headline">
@@ -33,7 +34,10 @@
         <div class="book-block__cover"><img src="http://soshnikov-writing.art/img/dear-citizens-og.jpg"/></div>
         <div class="book-block__headline">Дорогие петербуржцы</div>
         <div class="book-block__desc">Повесть-сериал о политическом кризисе в независимом Петрограде будущего. Одна неделя — один эпизод.</div>
-        <div class="book-block__links"><a class="book-block__button" href="dear-citizens.html">читать онлайн</a><a href="files/dear-citizens.pdf">Скачать PDF</a><a href="files/dear-citizens.epub">Скачать EPUB</a></div>
+        <div class="book-block__links"><a class="book-block__button" href="dear-citizens.html">читать онлайн</a>
+          <!--a(href=`files/${id}.pdf`) Скачать PDF-->
+          <!--a(href=`files/${id}.epub`) Скачать EPUB-->
+        </div>
       </div>
     </div>
   </div>

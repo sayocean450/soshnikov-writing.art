@@ -21,5 +21,9 @@
     @include col40(16px 0 24px 0, column);
     color: $white;
     font: $groteskMain;
+
+    @include respond(mobile) {
+      @include col100(16px 0 24px 0, column);
+    }
   }
 }
