@@ -1,22 +1,22 @@
 mixin pagination(activePage)
     div.pagination
         if activePage === 'umwelt'
-            a(href="articles.html").pagination__year всё подряд
-            a(href="chernotrop.html").pagination__year чернотроп
-            a(href="umwelt.html")(class="pagination__year pagination__year_active") umwelt
-            a(href="diary.html").pagination__year писательский дневник
+            a.pagination__year(href="articles.html") всё подряд
+            a.pagination__year(href="chernotrop.html") чернотроп
+            a.pagination__year.pagination__year_active(href="umwelt.html") umwelt
+            a.pagination__year(href="diary.html") писательский дневник
         else if activePage === 'chernotrop'
-            a(href="articles.html").pagination__year всё подряд
-            a(href="chernotrop.html")(class="pagination__year pagination__year_active") чернотроп
-            a(href="umwelt.html").pagination__year umwelt
-            a(href="diary.html").pagination__year писательский дневник
+            a.pagination__year(href="articles.html") всё подряд
+            a.pagination__year.pagination__year_active(href="chernotrop.html") чернотроп
+            a.pagination__year(href="umwelt.html") umwelt
+            a.pagination__year(href="diary.html") писательский дневник
         else if activePage === 'diary'
-            a(href="articles.html").pagination__year всё подряд
-            a(href="chernotrop.html").pagination__year чернотроп
-            a(href="umwelt.html").pagination__year umwelt
-            a(href="diary.html")(class="pagination__year pagination__year_active") писательский дневник
+            a.pagination__year(href="articles.html") всё подряд
+            a.pagination__year(href="chernotrop.html") чернотроп
+            a.pagination__year(href="umwelt.html") umwelt
+            a.pagination__year.pagination__year_active(href="diary.html") писательский дневник
         else
-            a(href="articles.html")(class="pagination__year pagination__year_active") всё подряд
+            a.pagination__year.pagination__year_active(href="articles.html") всё подряд
             a(href="chernotrop.html").pagination__year чернотроп
             a(href="umwelt.html").pagination__year umwelt
             a(href="diary.html").pagination__year писательский дневник
@@ -24,22 +24,22 @@ mixin pagination(activePage)
 mixin writingTags(activePage)
     div.pagination
         if activePage === 'novels'
-            a(href="writing.html").pagination__year всё вместе
-            //a(href="novels.html")(class="pagination__year pagination__year_active").pagination__year романы
-            a(href="novelettes.html").pagination__year повести
-            a(href="stories.html") рассказы
+            a.pagination__year(href="writing.html") всё вместе
+            //a.pagination__year.pagination__year_active(href="novels.html") романы
+            a.pagination__year(href="novelettes.html") повести
+            a.pagination__year(href="stories.html") рассказы
         else if activePage === 'novelettes'
-            a(href="writing.html").pagination__year всё вместе
-            //a(href="novels.html").pagination__year романы
-            a(href="novelettes.html")(class="pagination__year pagination__year_active").pagination__year повести
-            a(href="stories.html") рассказы
+            a.pagination__year(href="writing.html") всё вместе
+            //a.pagination__year(href="novels.html") романы
+            a.pagination__year.pagination__year_active(href="novelettes.html") повести
+            a.pagination__year(href="stories.html") рассказы
         else if activePage === 'stories'
-            a(href="writing.html").pagination__year всё вместе
-            //a(href="novels.html").pagination__year романы
-            a(href="novelettes.html").pagination__year повести
-            a(href="stories.html")(class="pagination__year pagination__year_active") рассказы
+            a.pagination__year(href="writing.html") всё вместе
+            //a.pagination__year(href="novels.html") романы
+            a.pagination__year(href="novelettes.html") повести
+            a.pagination__year.pagination__year_active(href="stories.html") рассказы
         else
-            a(href="writing.html")(class="pagination__year pagination__year_active").pagination__year всё вместе
-            //a(href="novels.html").pagination__year романы
-            a(href="novelettes.html").pagination__year повести
-            a(href="stories.html") рассказы
+            a.pagination__year.pagination__year_active(href="writing.html") всё вместе
+            //a.pagination__year(href="novels.html") романы
+            a.pagination__year(href="novelettes.html") повести
+            a.pagination__year(href="stories.html") рассказы
