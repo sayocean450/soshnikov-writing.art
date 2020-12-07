@@ -1,41 +1,19 @@
-#articles {
-    //parent
-    display: grid;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(3, auto);
-
-  &-headline {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 21;
-
-    @include col100(16px 0 24px 0);
-    color: $white;
-  }
-
-  &-tabs {
+.articles {
+  &__tabs {
     grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 21;
-
-    @include col100(16px 0 0 0);
   }
 
-  &-desc {
+  &__content {
     grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: 21;
 
-    @include col50(48px 0 24px 0, column);
+    @include col50(48px 32px 32px 32px, column);
     color: $white;
     font: $groteskMain;
-  }
-  
-  &-content {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-column-end: 21;
-    
-    @include col100(0, column);
+
+    @include respond(mobile) {
+      @include col100(24px 24px 24px 24px, column);
+    }
   }
 }

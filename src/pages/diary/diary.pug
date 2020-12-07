@@ -1,10 +1,10 @@
+include ../../components/book-card/book-card
 include ../../components/head/head
 include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
 include ../../components/pagination/pagination
 
-include ../../components/list-header/list-header
-include ../../components/book-card/book-card
-include ../../components/book-link/book-link
 doctype html(prefix="og: http://ogp.me/ns#")
 html
     +head(
@@ -15,17 +15,15 @@ html
     )
 body.body_dark
     +header('dark')
-    div#articles
-        div#articles-headline
-            h2 Публицистика
-        div#articles-tabs
+    div.content
+        +pageHeadline('публицистика')
+        div.tabs.articles__tabs
             +pagination('diary')
-        div#articles-desc
+        div.articles__content
              p 
                 | Ну а здесь я ною, как в твиттере, а также размышляю о жизни, любви и смерти. Вы можете следить за обновлениями этой рубрики у меня
                 a(href="http://t.me/blacktrope") на Фейбуке.
-        div#articles-content
-            div.list
-                +list-header('2020', 'dark')
-                +bookCard('рассказы разных бед', 'то, что нужно было просто пережить', 'misfortunes.html')
+        div.list
+            +list-header('2020', 'dark')
+            +bookCard('рассказы разных бед', 'то, что нужно было просто пережить', 'misfortunes.html')
 

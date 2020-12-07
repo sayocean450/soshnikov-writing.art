@@ -4,15 +4,16 @@
   
   @include col100(0);
   font: $groteskMain;
+  flex-wrap: nowrap;
   
   @include respond(mobile) {
     @include col100(0);
     font: $groteskMain;
+    overflow: scroll;
   }
   
   &__year {
     @include colauto(0 48px 0 0, column, center);
-    cursor: pointer;
     
     @include respond(mobile) {
       @include colauto(0 24px 0 0, column, center);

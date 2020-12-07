@@ -53,14 +53,6 @@ p {
   }
 }
 
-/*.content {
-  @include col100(0, column, flex-start, center);
-  
-  @include respond(mobile) {
-    @include col100(0, column, flex-start, center);
-  }
-}*/
-
 .list {
   grid-column-start: 1;
   grid-column-end: 21;

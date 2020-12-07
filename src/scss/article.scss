@@ -1,93 +1,102 @@
 .article {
-  @include colauto(0, column);
-  align-content: center;
-  max-width: 700px;
-  text-transform: none;
-  
-  @include respond(mobile) {
-    @include col100(0, column);
-  }
-  
-  font: $antiquaMain;
-  margin: 0 0 48px 0;
-  
-  @include respond(mobile) {
-    margin: 0 0 48px 0;
-    font: $antiquaSmall;
-    line-height: 1.7;
-  }
-  
-  h1 {
-    margin: 0 0 48px 0;
-    text-transform: lowercase;
-    
-    + .article__annotation {
-      margin: -24px 0 48px 0;
+  &__content {
+    grid-column-start: 2;
+    grid-column-end: 12;
+
+    text-transform: none;
+    font: $antiquaMain;
+
+    h1 {
+      margin: 0 0 48px 0;
+      text-transform: lowercase;
+
+      + .article__annotation {
+        margin: -24px 0 48px 0;
+      }
     }
-  }
-  
-  h2 {
-    margin: 24px 0 32px 0;
-    text-transform: lowercase;
-    
-    + .article__annotation {
-      margin: -16px 0 32px 0;
+
+    h2 {
+      margin: 24px 0 32px 0;
+      text-transform: lowercase;
+
+      + .article__annotation {
+        margin: -16px 0 32px 0;
+      }
     }
-  }
-  
-  a {
-    color: $milanoRed;
-  }
-  
-  &__annotation {
-    font: $groteskSmall;
-    text-transform: lowercase;
-  }
-  
-  &__next {
-    @include col100(0 0 24px 0, row, space-between);
-    font: $groteskMain;
-    
-    @include respond(mobile) {
-      @include col100(0 0 24px 0, column, space-between);
-    }
-    
+
     a {
       color: $milanoRed;
-      
+    }
+
+    &__annotation {
+      font: $groteskSmall;
+      text-transform: lowercase;
+    }
+
+    &__next {
+      @include col100(0 0 24px 0, row, space-between);
+      font: $groteskMain;
+
       @include respond(mobile) {
-        margin: 0 0 24px 0;
+        @include col100(0 0 24px 0, column, space-between);
+      }
+
+      a {
+        color: $milanoRed;
+
+        @include respond(mobile) {
+          margin: 0 0 24px 0;
+        }
+      }
+    }
+
+    &__image {
+      margin: 24px 0 0 0;
+      width: 50%;
+
+      img {
+        width: 50%;
+
+        @include respond(mobile) {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      @include respond(mobile) {
+        margin: 14px -32px 0 0;
+        width: 100%;
+      }
+
+      &-caption {
+        margin: 4px 0 24px 0;
+        font: $groteskSmall;
+        color: $gray;
+
+        @include respond(mobile) {
+          margin: 4px 0;
+          text-align: center;
+          font-size: 12px;
+        }
       }
     }
   }
-  
-  &__image {
-    margin: 24px 0 0 0;
-    width: 50%;
+
+  &__sidebar {
+    grid-column-start: 14;
+    grid-column-end: 20;
     
+    @include col100(32px 0 0 0);
+
+    text-transform: none;
+
     img {
-      width: 50%;
-      
-      @include respond(mobile) {
-        margin: 0;
-        width: 100%;
-      }
-    }
-    
-    @include respond(mobile) {
-      margin: 14px -32px 0 0;
       width: 100%;
     }
-    
-    &-caption {
-      margin: 4px 0 24px 0;
-      font: $groteskSmall;
-      color: $gray;
-      
-      @include respond(mobile) {
-        margin: 4px 0;
-        text-align: center;
-        font-size: 12px;
+
+    figure {
+      figcaption {
+        font: $groteskSmall;
       }
     }
   }
