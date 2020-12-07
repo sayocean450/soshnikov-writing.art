@@ -1,0 +1,25 @@
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
+include ../../components/pagination/pagination
+
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'артём сошников',
+      'пишу и обозреваю прозу, веду телеграм-канал о реализме «чернотроп»',
+      'http://soshnikov-writing.art/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark', 'contacts', 'active')
+    div.content
+        div.menu__content
+            a(href="index.html") главная
+            a(href="writing.html") проза
+            a(href="articles.html") публицистика
+            a(href="contacts.html") контакты

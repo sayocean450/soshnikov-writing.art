@@ -1,1 +1,7 @@
-@import "../../scss/colors";.icon {  &_yellow {    fill: $chromeYellow;  }    &_white {    fill: $white;  }}
+@import "../../scss/colors";
+
+.icon {
+  &_white {
+    fill: $white;
+  }
+}

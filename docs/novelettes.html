@@ -17,28 +17,34 @@
 <body class="body_dark">
   <div class="header header_dark">
     <div class="header__logo"><a class="header__logo-link" href="index.html">сошников</a></div>
-    <div class="header__menu"></div><a class="header__menu-elem header__menu-elem_active" href="writing.html">проза</a>
-    <!--a.header__menu-elem(href="articles.html") публицистика--><a class="header__menu-elem" href="contacts.html">контакты</a>
+    <div class="header__menu"><a class="header__menu-elem header__menu-elem_active" href="writing.html">проза</a>
+      <!--a.header__menu-elem(href="articles.html") публицистика--><a class="header__menu-elem" href="contacts.html">контакты</a>
+    </div>
+    <div class="header__menu_mobile" id="modeValue"><a href="menu.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path class="icon_white" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg></a>
+    </div>
   </div>
-  <div id="writing">
-    <div id="writing-headline">
+  <div class="content">
+    <div class="page-headline">
       <h2>проза</h2>
     </div>
-    <div id="writing-tabs">
+    <div class="tabs writing__tabs">
       <div class="pagination"><a class="pagination__year" href="writing.html">всё вместе</a>
         <!--a(href="novels.html").pagination__year романы--><a class="pagination__year pagination__year_active pagination__year" href="novelettes.html">повести</a><a href="stories.html">рассказы</a>
       </div>
     </div>
-    <div id="writing-content">
-      <div class="book-block">
-        <div class="book-block__cover"><img src="http://soshnikov-writing.art/img/dear-citizens-og.jpg"/></div>
-        <div class="book-block__headline">Дорогие петербуржцы</div>
-        <div class="book-block__desc">Повесть-сериал о политическом кризисе в независимом Петрограде будущего. Одна неделя — один эпизод.</div>
-        <div class="book-block__links"><a class="book-block__button" href="dear-citizens.html">читать онлайн</a>
-          <!--a(href=`files/${id}.pdf`) Скачать PDF-->
-          <!--a(href=`files/${id}.epub`) Скачать EPUB-->
-        </div>
-      </div>
+    <div class="writing__content">
+      <div class="book-block" href="#"><a href="dear-citizens.html">
+          <div class="book-block__cover"><img src="http://soshnikov-writing.art/img/dear-citizens-og.jpg"/></div>
+          <div class="book-block__headline">Дорогие петербуржцы</div>
+          <div class="book-block__desc">Повесть-сериал о политическом кризисе в независимом Петрограде будущего. Одна неделя — один эпизод.</div>
+          <div class="book-block__links"><a class="book-block__button" href="dear-citizens.html">читать онлайн</a>
+            <!--a(href=`files/${id}.pdf`) Скачать PDF-->
+            <!--a(href=`files/${id}.epub`) Скачать EPUB-->
+          </div></a></div>
     </div>
   </div>
 <script type="text/javascript" src="./js/bundle.js"></script></body>

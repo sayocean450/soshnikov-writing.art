@@ -1,22 +1,31 @@
+include ../icon/icon
+
 mixin header(theme='light', activePage, modeValue='inactive')
     include ../icon/icon
     div.header(class='header_' + theme)
         div.header__logo
             a.header__logo-link(href="index.html") сошников
         div.header__menu
-        if activePage === 'writing'
-            a.header__menu-elem.header__menu-elem_active(href="writing.html") проза
-            //a.header__menu-elem(href="articles.html") публицистика
-            a.header__menu-elem(href="contacts.html") контакты
-        else if activePage === 'articles'
-            a.header__menu-elem(href="writing.html") проза
-            //a.header__menu-elem.header__menu-elem_active(href="articles.html") публицистика
-            a.header__menu-elem(href="contacts.html") контакты
-        else if activePage === 'contacts'
-            a.header__menu-elem(href="writing.html") проза
-            //a.header__menu-elem(href="articles.html") публицистика
-            a.header__menu-elem.header__menu-elem_active(href="contacts.html") контакты
-        else
-            a.header__menu-elem(href="writing.html") проза
-            //a.header__menu-elem(href="articles.html") публицистика
-            a.header__menu-elem(href="contacts.html") контакты
+            if activePage === 'writing'
+                a.header__menu-elem.header__menu-elem_active(href="writing.html") проза
+                //a.header__menu-elem(href="articles.html") публицистика
+                a.header__menu-elem(href="contacts.html") контакты
+            else if activePage === 'articles'
+                a.header__menu-elem(href="writing.html") проза
+                //a.header__menu-elem.header__menu-elem_active(href="articles.html") публицистика
+                a.header__menu-elem(href="contacts.html") контакты
+            else if activePage === 'contacts'
+                a.header__menu-elem(href="writing.html") проза
+                //a.header__menu-elem(href="articles.html") публицистика
+                a.header__menu-elem.header__menu-elem_active(href="contacts.html") контакты
+            else
+                a.header__menu-elem(href="writing.html") проза
+                //a.header__menu-elem(href="articles.html") публицистика
+                a.header__menu-elem(href="contacts.html") контакты
+        div.header__menu_mobile#modeValue
+            if modeValue === 'active'
+                a(href="javascript:history.back()")
+                    +iconClose('24px').icon_white
+            else
+                a(href="menu.html")
+                    +iconMenu('24px').icon_white

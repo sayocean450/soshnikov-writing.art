@@ -7,12 +7,12 @@ html {
 }
 
 body {
-  padding: 80px 32px 32px 32px;
+  padding: 80px 0 32px 0;
   margin: 0;
   text-transform: lowercase;
   
   @include respond(mobile) {
-    padding: 80px 24px 24px 24px;
+    padding: 80px 0 24px 0;
     height: 100vh;
   }
 }
@@ -36,15 +36,39 @@ p {
 }
 
 .content {
+  //parent
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(3, auto);
+}
+
+.tabs {
+  grid-column-start: 1;
+  grid-column-end: 21;
+
+  @include col100(8px 32px);
+
+  @include respond(mobile) {
+    @include col100(8px 24px 16px 24px);
+  }
+}
+
+/*.content {
   @include col100(0, column, flex-start, center);
   
   @include respond(mobile) {
     @include col100(0, column, flex-start, center);
   }
-}
+}*/
 
 .list {
-  @include col100(0, column);
+  grid-column-start: 1;
+  grid-column-end: 21;
+  @include col100(0 32px, column);
+
+  @include respond(mobile) {
+    @include col100(0 24px, column);
+  }
 }
 
 blockquote {

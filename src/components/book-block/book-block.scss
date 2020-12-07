@@ -3,7 +3,7 @@
     font: $groteskMain;
 
     @include respond(mobile) {
-        @include col100(0 0 48px 0, column);
+        @include col100(0 0 32px 0, column);
     }
 
     &__cover {
@@ -14,25 +14,40 @@
     }
 
     &__headline {
-        @include col100(16px 0 0 0);
+        @include col100(16px 8px 0 0);
         font: $groteskLarge;
         color: $white;
+
+        @include respond(mobile) {
+            @include col100(16px 24px 0 24px);
+            font: $groteskLargeMobile;
+        }
     }
 
     &__desc {
         @include col100(8px 0 0 0);
         font: $groteskMain;
         color: $white;
+
+        @include respond(mobile) {
+            @include col100(8px 24px 0 24px);
+        }
     }
 
     &__links {
         @include col100(24px 0 0 0, column);
+
+        @include respond(mobile) {
+           @include col100(24px 24px 0 24px);
+        }
+
+        
     }
 
     &__button {
         @include colauto(8px 8px 10px 8px);
         line-height: 1;
-        background-color: $chromeYellow;
+        background-color: $coldBlue;
         color: $black;
         border-radius: 3px;
         margin: 0 0 8px 0;

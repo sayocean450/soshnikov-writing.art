@@ -1,5 +1,4 @@
 .pagination {
-  grid-column-start: 1;
   grid-column-end: 21;
   grid-row-start: 1;
   
@@ -7,7 +6,7 @@
   font: $groteskMain;
   
   @include respond(mobile) {
-    @include col100(0 0 24px 0);
+    @include col100(0);
     font: $groteskMain;
   }
   

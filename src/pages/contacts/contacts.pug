@@ -1,9 +1,12 @@
-include ../../components/head/head
-include ../../components/header/header
-
-include ../../components/list-header/list-header
 include ../../components/book-card/book-card
 include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
+include ../../components/pagination/pagination
+
 doctype html(prefix="og: http://ogp.me/ns#")
 html
     +head(
@@ -14,10 +17,9 @@ html
     )
 body.body_dark
     +header('dark', 'contacts')
-    div#contacts
-        div#contacts-headline
-            h2 контактная информация
-        div#contacts-desc
+    div.content
+        +pageHeadline('контакты')
+        div.contacts__content
             p
                 | быстрее всего написать мне в
                 =" "

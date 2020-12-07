@@ -1,0 +1,12 @@
+.page-headline {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 21;
+
+    @include col100(16px 32px 24px 32px);
+    color: $white;
+
+    @include respond(mobile) {
+        @include col100(16px 24px 16px 24px);
+    }
+}

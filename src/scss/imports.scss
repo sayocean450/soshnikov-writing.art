@@ -11,11 +11,14 @@
 @import "../components/list-header/list-header";
 @import "../components/book-card/book-card";
 @import "../components/pagination/pagination";
+@import "../components/page-headline/page-headline";
 
 @import "article";
 @import "profile";
-@import "../pages/index/index";
+
 @import "../pages/articles/articles";
-@import "../pages/writing/writing";
 @import "../pages/contacts/contacts";
+@import "../pages/index/index";
 @import "../pages/fuji/fuji";
+@import "../pages/menu/menu";
+@import "../pages/writing/writing";
