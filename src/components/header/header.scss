@@ -73,6 +73,15 @@
     
     a {
       color: $black;
+      height: 100%;
+
+      & svg {
+        margin-top: 6px;
+      }
+
+      & .icon_white {
+        fill: black;
+      }
     }
   }
 }

@@ -6,6 +6,13 @@
     text-transform: none;
     font: $antiquaMain;
 
+    @include respond(mobile) {
+      grid-column-start: 1;
+      grid-column-end: 20;
+
+      @include col100(0 24px, column);
+    }
+
     h1 {
       margin: 0 0 48px 0;
       text-transform: lowercase;
