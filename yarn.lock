@@ -841,9 +841,9 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*":
-  version "14.14.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
-  integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
+  version "14.14.11"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.11.tgz#fc25a4248a5e8d0837019b1d170146d07334abe0"
+  integrity sha512-BJ97wAUuU3NUiUCp44xzUFquQEvnk1wu7q4CMEUYKJWjdkr0YWYDsm4RFtAvxYsNjLsKcrFt6RvK8r+mnzMbEQ==
 
 "@types/q@^1.5.1":
   version "1.5.4"
@@ -6372,9 +6372,9 @@ sockjs@0.3.20:
     websocket-driver "0.6.5"
 
 soshnikov-writing@^1.0.21:
-  version "1.1.31"
-  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.31.tgz#7168d388f69c1667c754004f4afb39090279e0a8"
-  integrity sha512-eWbXqpAcLeP9SWtEu/Fl3fm7aqznxjUTsN/vEkSCSvypg7tM7/uHh0qBI994hUeqEsog7KwCB52zfzENsbaw+Q==
+  version "1.1.32"
+  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.32.tgz#dbf5090155a12075f08903cf1d7afa777409e89d"
+  integrity sha512-G9ChcjWNfx5SnaewdScpyYpt/rZvHsz7BbSI+2kflKTDa7LrLzmRjD2lgGEZZr28J36E907avGuZuoaMdZcXAA==
 
 source-list-map@^2.0.0:
   version "2.0.1"
