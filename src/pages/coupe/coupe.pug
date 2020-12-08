@@ -13,11 +13,11 @@ html
     )
 body.body_light
     +header()
-    div.content
-        div.article
+    div.story
+        div.story__content
             +article-breadcrumb('рассказы разных бед', 'misfortunes')
             include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/misfortunes/coupe.md
-            div.article__next
-                a(href="misfortunes.html#connotation") ← вернуться в содержание
+            div.story__next
                 a(href="coffins.html") читать следующий рассказ «гробы» →
+                a(href="misfortunes.html#connotation") ← вернуться в содержание
 

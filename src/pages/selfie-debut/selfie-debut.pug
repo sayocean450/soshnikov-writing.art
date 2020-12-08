@@ -13,10 +13,10 @@ html
     )
 body.body_light
     +header()
-    div.content
-        div.article
+    div.story
+        div.story__content
             +article-breadcrumb('вот мои селфи', 'selfie')
             include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/selfie/debut.md
-            div.article__next
+            div.story__next
                 a(href="selfie-alien.html") читать следующий эпизод →
                 a(href="selfie.html#connotation") ← вернуться в содержание

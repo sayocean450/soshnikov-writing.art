@@ -1,9 +1,12 @@
 .story {
+	grid-column-start: 1;
+	grid-column-end: 21;
+	@include col100(0, column, flex-start, center);
 
+	@include respond(mobile) {
+		@include col100(0 24px, column, flex-start, center);
+	}
 	&__content {
-		@include col100(0, column, flex-start, center);
-	  }
-	
 	  @include colauto(0, column, flex-start, center);
 	  align-content: center;
 	  max-width: 700px;
@@ -44,28 +47,6 @@
 		color: $milanoRed;
 	  }
 	  
-	  &__annotation {
-		font: $groteskSmall;
-		text-transform: lowercase;
-	  }
-	  
-	  &__next {
-		@include col100(0 0 24px 0, row, space-between);
-		font: $groteskMain;
-		
-		@include respond(mobile) {
-		  @include col100(0 0 24px 0, column, space-between);
-		}
-		
-		a {
-		  color: $milanoRed;
-		  
-		  @include respond(mobile) {
-			margin: 0 0 24px 0;
-		  }
-		}
-	  }
-	  
 	  &__image {
 		margin: 24px 0 0 0;
 		width: 50%;
@@ -97,4 +78,26 @@
 		}
 	  }
 	}
+
+	&__annotation {
+		font: $groteskSmall;
+		text-transform: lowercase;
+	  }
 	
+	&__next {
+		@include col100(0 0 24px 0, row, space-between);
+		font: $groteskMain;
+		
+		@include respond(mobile) {
+		  @include col100(0 0 24px 0, column, space-between);
+		}
+		
+		a {
+		  color: $milanoRed;
+		  
+		  @include respond(mobile) {
+			margin: 0 0 24px 0;
+		  }
+		}
+	  }
+}

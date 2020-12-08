@@ -1,19 +1,36 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-headline/article-headline
-include ../../components/article-breadcrumb/article-breadcrumb
 
 doctype html
 html
     +head(
-      'сошников — чужие снимки',
-      'сборничек короткой прозы, написанный для бульварно-хулиганского общества «dutch rudder»',
-      'http://soshnikov-writing.art/img/shoots-og.jpg',
+      'сошников — вот мои селфи',
+      'цикл ироничной прозы о мальчике тёме и его детстве в криминальном городе девяностых',
+      'http://soshnikov-writing.art/img/selfie-og.jpg',
       'article'
     )
 body.body_light
     +header()
-    div.content
-        div.article
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/shoots.md
-
+    div.profile
+        div.profile__title
+            h2 чужие снимки
+        div.profile__annotation
+            p Сборник короткой прозы о смешных, наивных, но в целом замечательных людях. Большинство историй написаны для самиздат-сообщества «Dutch Rudder».
+        div.profile__cover
+            img(src="http://soshnikov-writing.art/img/shoots-cover.jpg")
+        div.profile__connotation-title#connotation
+            h2 содержание
+        div.profile__connotation-contents
+            div.profile__connotation-section
+                a.profile__connotation-link(href='shoots-serega.html') серега
+                a.profile__connotation-link(href='shoots-watermelon.html') арбуз
+                a.profile__connotation-link(href='shoots-book-keeper.html') бухгалтер
+                a.profile__connotation-link(href='shoots-fatfob.html') фэтфоб
+                a.profile__connotation-link(href='shoots-chief.html') начальник
+                a.profile__connotation-link(href='shoots-hobby.html') хобби
+                a.profile__connotation-link(href='shoots-sonechka.html') сонечка marmelade
+                a.profile__connotation-link(href='shoots-deputy.html') депутат елистратыч
+                a.profile__connotation-link(href='shoots-susi.html') доставщик суси
+                a.profile__connotation-link(href='shoots-hustlers.html') хаслеры
+                a.profile__connotation-link(href='shoots-brush.html') кисточка

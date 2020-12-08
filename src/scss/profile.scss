@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: auto 10% auto 10% 15%;
   grid-template-rows: auto 64px auto;
+  padding: 0 32px 0 32px;
   
   @include respond(mobile) {
     grid-template-columns: 100%;
@@ -78,6 +79,11 @@
       }
       h2 {
         margin-bottom: 24px;
+        font: $groteskLargeMobile;
+
+        @include respond(mobile) {
+          margin-bottom: 16px;
+        }
       }
     }
     
@@ -89,10 +95,11 @@
       
       &_disabled {
         color: $gray;
+        background-image: none;
       }
       
       @include respond(mobile) {
-        font: $groteskLarge;
+        font: $groteskLargeMobile;
       }
     }
   }

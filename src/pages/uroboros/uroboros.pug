@@ -13,11 +13,11 @@ html
     )
 body.body_light
     +header()
-    div.content
-        div.article
+    div.story
+        div.story__content
             +article-breadcrumb('чужие беды', 'not-mine')
             include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/not-mine/uroboros.md
-            div.article__next
-                a(href="not-mine.html#connotation") ← вернуться в содержание
+            div.story__next
                 a(href="winger.html") читать следующий рассказ «вингер» →
+                a(href="not-mine.html#connotation") ← вернуться в содержание
 
