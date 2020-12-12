@@ -7,8 +7,8 @@ $groteskLarge: 32px/40px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
 $groteskLargeMobile: 24px/30px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
 $groteskExtraLarge: 48px/64px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
 
-$antiquaSmall: 18px/28px "KTB", Georgia, serif;
-$antiquaMain: 20px/34px "KTB", Georgia, serif;
+$antiquaSmall: 18px/24px "KTR", serif;
+$antiquaMain: 20px/33px "KTR", serif;
 
 a {
   text-decoration: none;
@@ -41,16 +41,6 @@ h1, h2, h5 {
 }
 
 @font-face {
-  font-family: 'KTB';
-  src: url('../fonts/type.eot');
-  src: url('../fonts/type.eot?#iefix') format('embedded-opentype'),
-  //url('../fonts/type.woff2') format('woff2'),
-  url('../fonts/type.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'PT Root UI Regular';
   src: url('../fonts/pt-root-ui-regular.eot');
   src: url('../fonts/pt-root-ui-regular.eot?#iefix') format('embedded-opentype'),
@@ -66,6 +56,16 @@ h1, h2, h5 {
   src: url('../fonts/pt-root-ui-bold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/pt-root-ui-bold.woff2') format('woff2'),
   url('../fonts/pt-root-ui-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KTR';
+  src: url('../fonts/ktr.woff');
+  src: url('../fonts/ktr.woff?#iefix') format('embedded-opentype'),
+  url('../fonts/ktr.woff2') format('woff2'),
+  url('../fonts/ktr.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
