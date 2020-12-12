@@ -1,8 +1,6 @@
-mixin bookCard(img, name, info, description, href)
+mixin bookCard(name, source, description, info, href)
     a(href=href, target="_blank").book-card
         div.book-card__name=name
-        div.book-card__description=description
         div.book-card__info=info
-        div.book-card__img
-            img(src=img)
-        
+        //div.book-card__description=description
+        div.book-card__source=source

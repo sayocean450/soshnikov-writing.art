@@ -1,5 +1,5 @@
 .book-card {
-  @include col100(8px 8px 24px 0, row, space-between);
+  @include col100(8px 8px 12px 0, row);
   font: $groteskMain;
   border-top: 1px solid $codGray;
   
@@ -11,33 +11,29 @@
     background-color: lighten($darkGray, 3%);
     transition: 0.2s;
   }
-
-  &__img {
-    @include col5(0);
-
-    & img {
-      width: 100%;
-    }
-
-    @include respond(mobile) {
-      display: none;
-    }
-  }
   
   &__name {
-    @include col30(0 24px 0 0);
+    @include col30(0 48px 0 0);
     
     @include respond(mobile) {
       @include col100(0);
     }
+  }
+
+  &__info {
+    @include col50(0 48px 0 0, column);
+    color: $white;
     
-    h3 {
-      margin: 0;
+    @include respond(mobile) {
+      @include col100(4px 0 8px 0, column);
+      font: $groteskSmall;
+      color: $gray;
     }
   }
   
   &__description {
-    @include col25(0);
+    @include col25(0 48px 0 0);
+    height: 100%;
     color: $white;
     
     @include respond(mobile) {
@@ -45,13 +41,15 @@
       color: $gray;
     }
   }
-  
-  &__info {
-    @include col25(0 24px 0 0, column);
+
+  &__source {
+    @include col10(0, column);
+    text-align: right;
+    flex: 1;
     color: $white;
     
     @include respond(mobile) {
-      @include col100(0, column);
+      @include col100(16px 0 0 0, column);
       font: $groteskSmall;
       color: $gray;
     }
