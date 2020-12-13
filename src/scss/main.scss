@@ -25,6 +25,10 @@ p {
   }
 }
 
+ol {
+  margin: 0 0 24px 0;
+}
+
 .body {
   &_dark {
     background-color: $darkGray;
