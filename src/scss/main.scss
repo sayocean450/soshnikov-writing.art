@@ -18,7 +18,7 @@ body {
 }
 
 p {
-  margin: 0 0 32px 0;
+  margin: 0 0 24px 0;
   
   @include respond(mobile) {
     margin: 0 0 24px 0;
@@ -64,7 +64,8 @@ p {
 }
 
 blockquote {
-  color: darken($milanoRed, 10%);
+  color: darken($milanoRed, 16%);
+  margin: 8px 0;
   
   @include respond(mobile) {
     margin: 4px 12px;
