@@ -3474,9 +3474,9 @@ html-comment-regex@^1.1.0:
   integrity sha512-P+M65QY2JQ5Y0G9KKdlDpo0zK+/OHptU5AaBwUfAIDJZk1MYf32Frm84EcOytfJE0t5JvkAnKlmjsXDnWzCJmQ==
 
 html-entities@^1.3.1:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.3.2.tgz#435f66668813b8e8157166655605ce4db324efa8"
-  integrity sha512-WDzyvI2FV3UIripMO4nqQbxIysC35l63C+Eiz4yG5VXFAG7e8zG8bPGSIg7oc6xjGY9Pjbsu855lc7STRJNQBQ==
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.3.3.tgz#3dca638a43ee7de316fc23067398491152ad4736"
+  integrity sha512-/VulV3SYni1taM7a4RMdceqzJWR39gpZHjBwUnsCFKWV/GJkD14CJ5F7eWcZozmHJK0/f/H5U3b3SiPkuvxMgg==
 
 html-loader@^0.5.5:
   version "0.5.5"
@@ -6371,9 +6371,9 @@ sockjs@0.3.20:
     websocket-driver "0.6.5"
 
 soshnikov-writing@^1.0.21:
-  version "1.1.40"
-  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.40.tgz#d1ae866f0a077d9899626530ed7fe2e68e00a4b8"
-  integrity sha512-IrzEmtsjycCMZupulbB5fwArywfxaUarbd4lfyz54ZDYDJSx1/dUTJb83gYFSSwnArH8hD0OhgnreovXu4ZSAg==
+  version "1.1.41"
+  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.41.tgz#c60fa857470f1dd195cfcc17af0dc0b1791c6207"
+  integrity sha512-QG/7MAd9FzbxdbKxv2lT0Jr94VbUzntzXBLCEwTulxmILa0SDOoqH9lwA0kQGFb03dH3ZX/cP+TmxFQt0OwMiQ==
 
 source-list-map@^2.0.0:
   version "2.0.1"
