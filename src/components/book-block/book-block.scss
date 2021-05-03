@@ -22,6 +22,7 @@
         @include respond(mobile) {
             @include col100(16px 24px 0 24px);
             font: $fontLargeMobile;
+            font-style: italic;
         }
     }
 
@@ -32,6 +33,7 @@
 
         @include respond(mobile) {
             @include col100(8px 24px 0 24px);
+            font: $fontMainMobile;
         }
     }
 

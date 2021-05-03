@@ -47,7 +47,7 @@
       @include colauto(0 0 0 48px);
 
       &_active {
-        color: $white !important;
+        color: black;
         cursor: default;
         
       }
@@ -64,24 +64,6 @@
         @include col50(0, row, flex-end);
       }
       
-    }
-  }
-  
-  &_light {
-    background-color: $white;
-    border-bottom: 1px solid darken($white, 20%);
-    
-    a {
-      color: $black;
-      height: 100%;
-
-      & svg {
-        margin-top: 6px;
-      }
-
-      & .icon_white {
-        fill: black;
-      }
     }
   }
 }

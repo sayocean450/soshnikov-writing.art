@@ -25,7 +25,7 @@ mixin header(activePage, modeValue='inactive')
         div.header__menu_mobile#modeValue
             if modeValue === 'active'
                 a(href="javascript:history.back()")
-                    +iconClose('24px').icon_white
+                    +iconClose('24px').icon_blue
             else
                 a(href="menu.html")
-                    +iconMenu('24px').icon_white
+                    +iconMenu('24px').icon_blue
