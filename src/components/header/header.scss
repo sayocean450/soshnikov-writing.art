@@ -2,7 +2,7 @@
 @import "../../scss/typo";
 
 .header {
-  @include col100(0 32px, row, flex-start, center);
+  @include col100(0 56px, row, flex-start, center);
   position: fixed;
   z-index: 2;
   top: 0;

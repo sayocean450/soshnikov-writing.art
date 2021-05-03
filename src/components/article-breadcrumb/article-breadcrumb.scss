@@ -1,7 +1,6 @@
 .article-breadcrumb {
-  @include col100(0 0 8px 0);
+  @include col100(0 0 16px 0);
   font: $fontMain;
-  text-transform: lowercase;
   
   &__link {
     color: $blue;

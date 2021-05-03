@@ -6,14 +6,14 @@ include ../../components/article-breadcrumb/article-breadcrumb
 doctype html
 html
     +head(
-      'сошников — реверсивный побег из ульяновска в петербург',
-      'сборник не очень хороших стихотворений',
+      'Реверсивный побег из Ульяновска в Петербург',
+      'Сборник не очень хороших стихотворений',
       'http://soshnikov.space/img/default.jpg',
       'article'
     )
 body.body_light
     +header()
-    div.content
-        div.article
+    div.story
+        div.story__content
             include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/poetry/book-of-bad-poems.md
 

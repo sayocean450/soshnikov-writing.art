@@ -1,4 +1,41 @@
 .article {
+  &__image {
+    margin: 24px 0 0 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+      
+
+      @include respond(mobile) {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    @include respond(mobile) {
+      margin: 14px -32px 0 0;
+      width: 100%;
+    }
+
+    &-caption {
+      margin: 4px 0 24px 0;
+      font: $fontSmall;
+      color: $black;
+
+      @include respond(mobile) {
+        margin: 4px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__caption {
+    font: $fontMedium;
+    font-style: italic;
+  }
+
   &__content {
     grid-column-start: 2;
     grid-column-end: 12;
@@ -15,7 +52,6 @@
 
     h1 {
       margin: 0 0 48px 0;
-      text-transform: lowercase;
 
       + .article__annotation {
         margin: -24px 0 48px 0;
@@ -24,7 +60,6 @@
 
     h2 {
       margin: 24px 0 32px 0;
-      text-transform: lowercase;
 
       + .article__annotation {
         margin: -16px 0 32px 0;
@@ -37,7 +72,6 @@
 
     &__annotation {
       font: $fontSmall;
-      text-transform: lowercase;
     }
 
     &__next {
@@ -56,39 +90,7 @@
         }
       }
     }
-
-    &__image {
-      margin: 24px 0 0 0;
-      width: 50%;
-
-      img {
-        width: 50%;
-
-        @include respond(mobile) {
-          margin: 0;
-          width: 100%;
-        }
-      }
-
-      @include respond(mobile) {
-        margin: 14px -32px 0 0;
-        width: 100%;
-      }
-
-      &-caption {
-        margin: 4px 0 24px 0;
-        font: $fontSmall;
-        color: $black;
-
-        @include respond(mobile) {
-          margin: 4px 0;
-          text-align: center;
-          font-size: 12px;
-        }
-      }
-    }
   }
-
   &__sidebar {
     grid-column-start: 14;
     grid-column-end: 20;

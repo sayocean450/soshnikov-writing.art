@@ -8,9 +8,10 @@
     grid-column-start: 1;
     grid-column-end: 21;
 
-    @include col50(24px 32px 16px 32px, column);
-    color: $white;
+    @include col50(0px 24px 0px 56px, column);
+    color: $black;
     font: $fontMain;
+    font-style: italic;
 
     p {
       margin: 0;

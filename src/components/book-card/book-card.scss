@@ -1,5 +1,5 @@
 .book-card {
-  @include col100(18px 24px 24px 24px, row);
+  @include col100(18px 24px 24px 24px, row, space-between);
   font: $fontMain;
   color: $black;
   border-bottom: 1px solid darken($white, 10%);
@@ -14,7 +14,13 @@
   }
   
   &__name {
-    @include col50(0);
+    @include col50(0, column);
+
+    span {
+      margin-top: 8px; 
+      font: $fontMedium;
+      font-style: italic;
+    }
     
     @include respond(mobile) {
       @include col100(0);
@@ -34,6 +40,10 @@
       color: $black;
       font: $fontSmall;
     }
+  }
+
+  &__info {
+    font: $fontMedium;
   }
   
   &__links {

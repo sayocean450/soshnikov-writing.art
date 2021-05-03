@@ -26,8 +26,7 @@
 	  }
 	  
 	  h1 {
-		margin: 0 0 48px 0;
-		text-transform: lowercase;
+		margin: 0 0 32px 0;
 		
 		+ .article__annotation {
 		  margin: -24px 0 48px 0;
@@ -36,7 +35,7 @@
 	  
 	  h2 {
 		margin: 24px 0 32px 0;
-		text-transform: lowercase;
+
 		
 		+ .article__annotation {
 		  margin: -16px 0 32px 0;
@@ -81,7 +80,6 @@
 
 	&__annotation {
 		font: $fontSmall;
-		text-transform: lowercase;
 	  }
 	
 	&__next {

@@ -2,7 +2,7 @@
   grid-column-end: 21;
   grid-row-start: 1;
   
-  @include col100(0 0 24px 0);
+  @include col100(0 0 24px 24px);
   font: $fontMain;
   flex-wrap: nowrap;
   

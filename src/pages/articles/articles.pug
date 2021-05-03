@@ -8,7 +8,7 @@ include ../../components/pagination/pagination
 doctype html(prefix="og: http://ogp.me/ns#")
 html
     +head(
-      'артём сошников • публицистика',
+      'Артём Сошников • Публицистика',
       'Здесь собраны все мои нехудожественные тексты в хронологическом порядке',
       'http://soshnikov.space/img/default.jpg',
       ''
@@ -16,11 +16,9 @@ html
 body.body_dark
     +header('dark', 'articles')
     div.content
-        +pageHeadline('публицистика')
+        +pageHeadline('Публицистика')
         div.tabs.articles__tabs
             +pagination('all')
-        div.articles__content
-            p Здесь собраны все мои рецензии на прозу и нонф-фикшн в хронологическом порядке
         div.list
             +list-header('2020', 'dark')
             +bookCard(
@@ -55,7 +53,7 @@ body.body_dark
                 '​Что нас ждет, когда нефть кончится?',
                 'Rara Avis',
                 'Артём Сошников — о поведенческой экономике, теории свободного рынка и капитализме платформ',
-                'К.Сонин «Когда кончится нефть и другие уроки экономики» / Р.Талер «Новая поведенческая экономика» / Н.Срничек «Капитализм платформ»',
+                'Н.Срничек «Капитализм платформ» + 2',
                 'https://rara-rara.ru/menu-texts/chto_nas_zhdet_kogda_neft_konchitsya',
                 'blank'
             )
@@ -70,7 +68,7 @@ body.body_dark
                 'Путин проиграл «удалёнщикам»',
                 'Рабкор',
                 '',
-                'Чем закончилось противостояние платформ с государством и почему в этой ситуации больше всего пострадали рядовые работники?',
+                '',
                 'http://rabkor.ru/columns/analysis/2020/03/28/putin_lost_to_programmers/',
                 'blank'
             )

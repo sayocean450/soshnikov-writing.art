@@ -3,7 +3,7 @@
   grid-column-start: 1;
   grid-column-end: 21;
   
-  @include col80(64px 32px 96px 32px);
+  @include col80(64px 56px 96px 56px);
   font: $fontExtraLarge;
   color: $black;
   

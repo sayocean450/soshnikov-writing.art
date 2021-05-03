@@ -6,14 +6,14 @@ include ../../components/article-breadcrumb/article-breadcrumb
 doctype html
 html
     +head(
-      'сошников — инсайд',
-      'два московских авантюриста и полусумасшедший профессор случайно раскручивают инсайдерский канал в телеграме',
+      'Сошников — Инсайд',
+      'Два московских авантюриста и полусумасшедший профессор случайно раскручивают инсайдерский канал в телеграме',
       'http://soshnikov.space/img/inside-og.jpg',
       'article'
     )
 body.body_light
     +header()
-    div.content
-        div.article
+    div.story
+        div.story__content
             include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/inside.md
 
