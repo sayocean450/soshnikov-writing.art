@@ -1,0 +1,19 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'вылизан, но',
+      '',
+      'http://soshnikov.space/img/default.jpg',
+      'article'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            +article-breadcrumb('чернотроп', 'chernotrop')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/blacktrope/salnikov-oposredovanno.md

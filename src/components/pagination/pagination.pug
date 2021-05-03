@@ -1,26 +1,11 @@
 mixin pagination(activePage)
     div.pagination
-        if activePage === 'umwelt'
-            a.pagination__year(href="articles.html") все статьи
-            a.pagination__year(href="chernotrop.html") чернотроп
-            a.pagination__year.pagination__year_active(href="umwelt.html") umwelt
-            a.pagination__year(href="cherry-esse.html") черри-эссе
-        else if activePage === 'chernotrop'
-            a.pagination__year(href="articles.html") все статьи
-            a.pagination__year.pagination__year_active(href="chernotrop.html") чернотроп
-            a.pagination__year(href="umwelt.html") umwelt
+        if activePage === 'all'
+            a.pagination__year.pagination__year_active(href="articles.html") рецензии
             a.pagination__year(href="cherry-esse.html") черри-эссе
         else if activePage === 'diary'
-            a.pagination__year(href="articles.html") все статьи
-            a.pagination__year(href="chernotrop.html") чернотроп
-            a.pagination__year(href="umwelt.html") umwelt
+            a.pagination__year(href="articles.html") рецензии
             a.pagination__year.pagination__year_active(href="cherry-esse.html") черри-эссе
-        else
-            a.pagination__year.pagination__year_active(href="articles.html") все статьи
-            a(href="chernotrop.html").pagination__year чернотроп
-            a(href="umwelt.html").pagination__year umwelt
-            a(href="cherry-esse.html").pagination__year черри-эссе
-
 mixin writingTags(activePage)
     div.pagination
         if activePage === 'novels'
