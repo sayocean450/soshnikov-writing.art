@@ -8,15 +8,15 @@
   top: 0;
   left: 0;
   height: 48px;
-  font: $groteskMain;
-  background-color: $darkGray;
+  font: $fontMain;
+  background-color: $white;
   
   @include respond(mobile) {
     @include col100(0 24px, row, flex-start, center);
   }
   
   a {
-    color: $coldBlue;
+    color: $blue;
   }
   
   &__logo {
@@ -68,8 +68,8 @@
   }
   
   &_light {
-    background-color: $soapStone;
-    border-bottom: 1px solid darken($soapStone, 20%);
+    background-color: $white;
+    border-bottom: 1px solid darken($white, 20%);
     
     a {
       color: $black;

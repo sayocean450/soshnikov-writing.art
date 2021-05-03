@@ -1,6 +1,6 @@
 .book-block {
-    @include col30(0 5% 5% 0, column);
-    font: $groteskMain;
+    @include col30(0 5% 3% 0, column);
+    font: $fontMain;
 
     @include respond(mobile) {
         @include col100(0 0 32px 0, column);
@@ -15,19 +15,20 @@
 
     &__headline {
         @include col100(16px 8px 0 0);
-        font: $groteskLarge;
-        color: $white;
+        font: $fontLarge;
+        color: $black;
+        font-style: italic;
 
         @include respond(mobile) {
             @include col100(16px 24px 0 24px);
-            font: $groteskLargeMobile;
+            font: $fontLargeMobile;
         }
     }
 
     &__desc {
-        @include col100(8px 0 0 0);
-        font: $groteskMain;
-        color: $white;
+        @include col100(16px 0 0 0);
+        font: $fontMain;
+        color: $black;
 
         @include respond(mobile) {
             @include col100(8px 24px 0 24px);
@@ -35,7 +36,7 @@
     }
 
     &__links {
-        @include col100(24px 0 0 0, column);
+        @include col100(8px 0 0 0, column);
 
         @include respond(mobile) {
            @include col100(24px 24px 0 24px);
@@ -45,10 +46,10 @@
     }
 
     &__button {
-        @include colauto(8px 16px 10px 16px);
+        @include colauto(8px 0 10px 0);
         line-height: 1;
-        background-color: $coldBlue;
-        color: $black;
+        background-color: $white;
+        color: $blue;
         border-radius: 3px;
         margin: 0 0 8px 0;
     }

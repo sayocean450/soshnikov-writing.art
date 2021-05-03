@@ -1,8 +1,8 @@
 include ../icon/icon
 
-mixin header(theme='light', activePage, modeValue='inactive')
+mixin header(activePage, modeValue='inactive')
     include ../icon/icon
-    div.header(class=`header_${theme}`)
+    div.header(class=`header`)
         div.header__logo
             a.header__logo-link(href="index.html") сошников
         div.header__menu

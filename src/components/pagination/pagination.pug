@@ -1,30 +1,30 @@
 mixin pagination(activePage)
     div.pagination
         if activePage === 'all'
-            a.pagination__year.pagination__year_active(href="articles.html") рецензии
+            a.pagination__year.pagination__year_active(href="articles.html") Рецензии
             a.pagination__year(href="cherry-esse.html") черри-эссе
         else if activePage === 'diary'
-            a.pagination__year(href="articles.html") рецензии
+            a.pagination__year(href="articles.html") Рецензии
             a.pagination__year.pagination__year_active(href="cherry-esse.html") черри-эссе
 mixin writingTags(activePage)
     div.pagination
         if activePage === 'novels'
-            a.pagination__year(href="writing.html") всё вместе
+            a.pagination__year(href="writing.html") Всё вместе
             //a.pagination__year.pagination__year_active(href="novels.html") романы
-            a.pagination__year(href="novelettes.html") повести
-            a.pagination__year(href="stories.html") рассказы
+            a.pagination__year(href="novelettes.html") Повести
+            a.pagination__year(href="stories.html") Рассказы
         else if activePage === 'novelettes'
-            a.pagination__year(href="writing.html") всё вместе
+            a.pagination__year(href="writing.html") Всё вместе
             //a.pagination__year(href="novels.html") романы
-            a.pagination__year.pagination__year_active(href="novelettes.html") повести
-            a.pagination__year(href="stories.html") рассказы
+            a.pagination__year.pagination__year_active(href="novelettes.html") Повести
+            a.pagination__year(href="stories.html") Рассказы
         else if activePage === 'stories'
-            a.pagination__year(href="writing.html") всё вместе
+            a.pagination__year(href="writing.html") Всё вместе
             //a.pagination__year(href="novels.html") романы
-            a.pagination__year(href="novelettes.html") повести
-            a.pagination__year.pagination__year_active(href="stories.html") рассказы
+            a.pagination__year(href="novelettes.html") Повести
+            a.pagination__year.pagination__year_active(href="stories.html") Рассказы
         else
-            a.pagination__year.pagination__year_active(href="writing.html") всё вместе
+            a.pagination__year.pagination__year_active(href="writing.html") Всё вместе
             //a.pagination__year(href="novels.html") романы
-            a.pagination__year(href="novelettes.html") повести
-            a.pagination__year(href="stories.html") рассказы
+            a.pagination__year(href="novelettes.html") Повести
+            a.pagination__year(href="stories.html") Рассказы

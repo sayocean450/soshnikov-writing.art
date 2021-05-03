@@ -7,7 +7,7 @@
     grid-column-start: 1;
     grid-column-end: 21;
     
-    @include col100(32px 32px 0 32px, row);
+    @include col100(8px 32px 0 32px, row);
     flex-wrap: wrap;
 
     @include respond(mobile) {

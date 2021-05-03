@@ -16,12 +16,12 @@
 		@include col100(0, column);
 	  }
 	  
-	  font: $antiquaMain;
+	  font: $fontMain;
 	  margin: 0 0 48px 0;
 	  
 	  @include respond(mobile) {
 		margin: 0 0 48px 0;
-		font: $antiquaSmall;
+		font: $fontSmall;
 		line-height: 1.7;
 	  }
 	  
@@ -44,7 +44,7 @@
 	  }
 	  
 	  a {
-		color: $milanoRed;
+		color: $blue;
 	  }
 	  
 	  &__image {
@@ -67,8 +67,8 @@
 		
 		&-caption {
 		  margin: 4px 0 24px 0;
-		  font: $groteskSmall;
-		  color: $gray;
+		  font: $fontSmall;
+		  color: $black;
 		  
 		  @include respond(mobile) {
 			margin: 4px 0;
@@ -80,20 +80,20 @@
 	}
 
 	&__annotation {
-		font: $groteskSmall;
+		font: $fontSmall;
 		text-transform: lowercase;
 	  }
 	
 	&__next {
 		@include col100(0 0 24px 0, row, space-between);
-		font: $groteskMain;
+		font: $fontMain;
 		
 		@include respond(mobile) {
 		  @include col100(0 0 24px 0, column, space-between);
 		}
 		
 		a {
-		  color: $milanoRed;
+		  color: $blue;
 		  
 		  @include respond(mobile) {
 			margin: 0 0 24px 0;

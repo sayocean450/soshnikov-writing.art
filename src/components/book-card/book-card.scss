@@ -1,57 +1,48 @@
 .book-card {
-  @include col100(8px 8px 12px 0, row);
-  font: $groteskMain;
-  border-top: 1px solid $codGray;
+  @include col100(18px 24px 24px 24px, row);
+  font: $fontMain;
+  color: $black;
+  border-bottom: 1px solid darken($white, 10%);
   
   @include respond(mobile) {
-    @include col100(8px 0 24px 0, column);
+    @include col100(16px 8px 24px 8px, column);
   }
 
   &:hover {
-    background-color: lighten($darkGray, 3%);
+    background-color: darken($white, 3%);
     transition: 0.2s;
   }
   
   &__name {
-    @include col30(0 48px 0 0);
+    @include col50(0);
     
     @include respond(mobile) {
       @include col100(0);
+      color: $blue;
     }
-  }
-
-  &__info {
-    @include col50(0 48px 0 0, column);
-    color: $white;
     
-    @include respond(mobile) {
-      @include col100(4px 0 8px 0, column);
-      font: $groteskSmall;
-      color: $gray;
+    h3 {
+      margin: 0;
     }
   }
   
   &__description {
-    @include col25(0 48px 0 0);
-    height: 100%;
-    color: $white;
+    @include col50(0);
     
     @include respond(mobile) {
       @include col100(12px 0);
-      color: $gray;
+      color: $black;
+      font: $fontSmall;
     }
   }
-
-  &__source {
-    @include col10(0, column);
-    text-align: right;
-    flex: 1;
-    color: $white;
+  
+  &__links {
+    @include col15(0 0 0 0, column);
+    align-items: flex-end;
     
     @include respond(mobile) {
-      @include col100(16px 0 0 0, column);
-      font: $groteskSmall;
-      color: $gray;
+      @include col100(12px 0 0 0, column);
+      align-items: flex-end;
     }
   }
 }

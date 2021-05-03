@@ -1,43 +1,36 @@
 @import "colors";
 
-$groteskSmall: 14px/20px "PT Root UI Regular", 'PT Sans', Arial, sans-serif;
-$groteskMedium: 16px/23px "PT Root UI Regular", 'PT Sans', Arial, sans-serif;
-$groteskMain: 18px/28px "PT Root UI Regular", 'PT Sans', Arial, sans-serif;
-$groteskLarge: 32px/40px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
-$groteskLargeMobile: 24px/30px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
-$groteskExtraLarge: 48px/64px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
-
-$antiquaSmall: 18px/24px "KTR", serif;
-$antiquaMain: 20px/33px "KTR", serif;
+$fontSmall: 14px/20px 'EB Garamond', 'Arial', Georgia, serif;
+$fontMedium: 16px/23px 'EB Garamond', 'Arial', Georgia, serif;
+$fontMain: 24px/32px 'EB Garamond', 'Arial', Georgia, serif;
+$fontLarge: 32px/40px 'EB Garamond', 'Arial', Georgia, serif;
+$fontLargeMobile: 24px/30px 'EB Garamond', 'Arial', Georgia, serif;
+$fontExtraLarge: 48px/56px 'EB Garamond', 'Arial', Georgia, serif;
 
 a {
   text-decoration: none;
-  color: $coldBlue;
+  color: $blue;
 }
 
 h1 {
-  font: $groteskExtraLarge;
+  font: $fontExtraLarge;
   margin: 0;
   
   @include respond(mobile) {
-    font: $groteskLarge;
+    font: $fontLarge;
   }
 }
 
 h2 {
-  font: $groteskLarge;
+  font: $fontLarge;
   margin: 0;
 }
 
 h5 {
-  font: $groteskSmall;
+  font: $fontSmall;
   letter-spacing: 1px;
   margin: 0 0 4px 0;
   text-transform: uppercase;
-}
-
-h1, h2, h5 {
-  font-weight: bold;
 }
 
 @font-face {

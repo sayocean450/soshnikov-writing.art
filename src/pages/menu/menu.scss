@@ -5,7 +5,7 @@
     grid-column-end: 21;
 
     @include col100(48px 32px 24px 32px, column, flex-start, center);
-    font: $groteskLarge;
+    font: $fontLarge;
 
     a {
       margin: 0 0 24px 0;

@@ -4,17 +4,21 @@
   grid-column-end: 21;
   
   @include col80(64px 32px 96px 32px);
-  font: $groteskExtraLarge;
-  font-weight: 700;
-  color: $white;
+  font: $fontExtraLarge;
+  color: $black;
   
   @include respond(mobile) {
     @include col100(0 24px 48px 24px);
-    font: $groteskLargeMobile;
+    font: $fontLargeMobile;
   }
   
   p {
     margin: 0;
+    line-height: 1.24;
+  }
+
+  &-link {
+    font-style: italic;
   }
 }
 

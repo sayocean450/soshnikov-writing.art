@@ -34,7 +34,7 @@
       margin: 0 0 70px 0;
       text-align: center;
       height: 56px;
-      font: $groteskSmall;
+      font: $fontSmall;
       color: white;
       
       & span {
@@ -53,7 +53,7 @@
       & h1 {
         margin: 0;
         font-size: 64px;
-        font: $groteskLarge;
+        font: $fontLarge;
         
         @include respond(mobile) {
           font-size: 32px;
@@ -88,7 +88,7 @@
     font-family: 'Lora', serif;
     
     @include respond(mobile) {
-      font: $groteskMain;
+      font: $fontMain;
       line-height: 1.6;
     }
     
@@ -178,7 +178,7 @@
     &-year {
       @include col100(0, row, center);
       font-size: 12px;
-      color: gray;
+      color: black;
     }
     
     &-content {
@@ -210,7 +210,7 @@
           
           @include respond(mobile) {
             font-size: 14px;
-            font: $groteskMain;
+            font: $fontMain;
           }
         }
       }

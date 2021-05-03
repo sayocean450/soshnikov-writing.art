@@ -6,7 +6,7 @@
 
     @include col40(16px 32px 24px 32px, column);
     color: $white;
-    font: $groteskMain;
+    font: $fontMain;
 
     @include respond(mobile) {
       @include col100(16px 24px 24px 24px, column);

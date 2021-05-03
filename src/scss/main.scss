@@ -9,7 +9,6 @@ html {
 body {
   padding: 80px 0 32px 0;
   margin: 0;
-  text-transform: lowercase;
   
   @include respond(mobile) {
     padding: 80px 0 24px 0;
@@ -31,11 +30,11 @@ ol {
 
 .body {
   &_dark {
-    background-color: $darkGray;
+    background-color: $white;
   }
   
   &_light {
-    background-color: $soapStone;
+    background-color: $white;
   }
 }
 
@@ -68,7 +67,7 @@ ol {
 }
 
 blockquote {
-  color: darken($milanoRed, 16%);
+  color: darken($blue, 16%);
   margin: 8px 0;
   
   @include respond(mobile) {
@@ -79,8 +78,8 @@ blockquote {
 code {
   @include colauto(8px 16px);
   border-radius: 4px;
-  background-color: darken($soapStone, 5%);
-  font: $groteskMain;
+  background-color: darken($white, 5%);
+  font: $fontMain;
   margin: 0 0 8px 0;
 }
 

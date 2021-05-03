@@ -4,7 +4,7 @@
     grid-column-end: 12;
 
     text-transform: none;
-    font: $antiquaMain;
+    font: $fontMain;
 
     @include respond(mobile) {
       grid-column-start: 1;
@@ -32,24 +32,24 @@
     }
 
     a {
-      color: $coldBlue;
+      color: $blue;
     }
 
     &__annotation {
-      font: $groteskSmall;
+      font: $fontSmall;
       text-transform: lowercase;
     }
 
     &__next {
       @include col100(0 0 24px 0, row, space-between);
-      font: $groteskMain;
+      font: $fontMain;
 
       @include respond(mobile) {
         @include col100(0 0 24px 0, column, space-between);
       }
 
       a {
-        color: $milanoRed;
+        color: $blue;
 
         @include respond(mobile) {
           margin: 0 0 24px 0;
@@ -77,8 +77,8 @@
 
       &-caption {
         margin: 4px 0 24px 0;
-        font: $groteskSmall;
-        color: $gray;
+        font: $fontSmall;
+        color: $black;
 
         @include respond(mobile) {
           margin: 4px 0;
@@ -103,7 +103,7 @@
 
     figure {
       figcaption {
-        font: $groteskSmall;
+        font: $fontSmall;
       }
     }
   }
