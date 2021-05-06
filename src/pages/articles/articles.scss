@@ -8,7 +8,7 @@
     grid-column-start: 1;
     grid-column-end: 21;
 
-    @include col50(0px 56px 56px 56px, column);
+    @include col50(0px 56px 0 56px, column);
     color: $black;
     font: $fontSmall;
 
