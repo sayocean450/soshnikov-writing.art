@@ -20,8 +20,8 @@ const PATHS = {
   styles:    path.join(__dirname, './src/scss'),
   fonts:     path.join(__dirname, './src/fonts'),
   distFonts: path.join(__dirname, './docs/fonts'),
-  pdf:       path.join(__dirname, './src/observer.pdf'),
-  distPdf: path.join(__dirname, './docs/observer.pdf')
+  pdf:       path.join(__dirname, './src/pdf'),
+  distPdf: path.join(__dirname, './docs/')
 };
 
 /* ПЛАГИНЫ */
