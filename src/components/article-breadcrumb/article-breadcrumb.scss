@@ -1,6 +1,10 @@
 .article-breadcrumb {
   @include col100(0 0 16px 0);
   font: $fontMain;
+
+  @include respond(mobile) {
+    font: $fontSmall;
+  }
   
   &__link {
     color: $blue;

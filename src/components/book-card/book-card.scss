@@ -1,29 +1,42 @@
 .book-card {
   @include col100(18px 24px 24px 24px, row, space-between);
   font: $fontMain;
-  color: $black;
   border-bottom: 1px solid darken($white, 10%);
   
   @include respond(mobile) {
-    @include col100(16px 8px 24px 8px, column);
-  }
+    @include col100(16px 8px 16px 0, column);
+    font: $fontSmall;
+  } 
 
   &:hover {
     background-color: darken($white, 3%);
     transition: 0.2s;
   }
   
-  &__name {
+  &__content {
     @include col50(0, column);
 
-    span {
+    &-name {
+      color: $blue;
+    }
+
+    &-info {
       margin-top: 8px; 
-      font: $fontMedium;
-      font-style: italic;
+      font: $fontSmall;
+      color: $black;
+
+      @include respond(mobile) {
+        @include col100(0, column);
+        font-style: normal;
+        color: $black;
+        line-height: 1.4;
+
+        
+      }
     }
     
     @include respond(mobile) {
-      @include col100(0);
+      @include col100(0, column);
       color: $blue;
     }
     
@@ -43,7 +56,13 @@
   }
 
   &__info {
-    font: $fontMedium;
+    font: $fontSmall;
+
+    @include respond(mobile) {
+      font: $fontSmall;
+      color: $black;
+      margin-top: 8px;
+    }
   }
   
   &__links {

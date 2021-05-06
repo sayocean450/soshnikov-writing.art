@@ -3,11 +3,11 @@
 @import "../../scss/typo";
 
 .list-header {
-  @include col100(48px 0 8px 24px, row);
+  @include col100(48px 0 0 24px, row);
   word-break: break-word;
   color: $black;
   
   @include respond(mobile) {
-    @include col100(24px 0, row);
+    @include col100(48px 0 8px 0, row);
   }
 }

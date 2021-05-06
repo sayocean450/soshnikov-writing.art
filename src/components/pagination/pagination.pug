@@ -8,23 +8,9 @@ mixin pagination(activePage)
             a.pagination__year.pagination__year_active(href="cherry-esse.html") черри-эссе
 mixin writingTags(activePage)
     div.pagination
-        if activePage === 'novels'
-            a.pagination__year(href="writing.html") всё вместе
-            //a.pagination__year.pagination__year_active(href="novels.html") романы
-            a.pagination__year(href="novelettes.html") повести
-            a.pagination__year(href="stories.html") рассказы
-        else if activePage === 'novelettes'
-            a.pagination__year(href="writing.html") всё вместе
-            //a.pagination__year(href="novels.html") романы
-            a.pagination__year.pagination__year_active(href="novelettes.html") повести
-            a.pagination__year(href="stories.html") рассказы
-        else if activePage === 'stories'
-            a.pagination__year(href="writing.html") всё вместе
-            //a.pagination__year(href="novels.html") романы
-            a.pagination__year(href="novelettes.html") повести
+        if activePage === 'stories'
             a.pagination__year.pagination__year_active(href="stories.html") рассказы
-        else
-            a.pagination__year.pagination__year_active(href="writing.html") всё вместе
-            //a.pagination__year(href="novels.html") романы
             a.pagination__year(href="novelettes.html") повести
+        else
             a.pagination__year(href="stories.html") рассказы
+            a.pagination__year.pagination__year_active(href="novelettes.html") повести

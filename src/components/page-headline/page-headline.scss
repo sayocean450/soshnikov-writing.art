@@ -3,14 +3,14 @@
     grid-column-start: 1;
     grid-column-end: 21;
 
-    @include col100(16px 32px 24px 56px);
+    @include col100(0 56px);
     color: $black;
 
     @include respond(mobile) {
-        @include col100(16px 24px 16px 24px);
+        @include col100(0 24px);
 
         h2 {
-            font: $fontLargeMobile;
+            font: $fontMain;
         }
         
     }

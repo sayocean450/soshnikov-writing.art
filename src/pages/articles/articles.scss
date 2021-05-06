@@ -8,10 +8,9 @@
     grid-column-start: 1;
     grid-column-end: 21;
 
-    @include col50(0px 24px 0px 56px, column);
+    @include col50(0px 56px 56px 56px, column);
     color: $black;
-    font: $fontMain;
-    font-style: italic;
+    font: $fontSmall;
 
     p {
       margin: 0;
@@ -19,6 +18,7 @@
 
     @include respond(mobile) {
       @include col100(24px 24px 24px 24px, column);
+      font: $fontSmall;
     }
   }
 }

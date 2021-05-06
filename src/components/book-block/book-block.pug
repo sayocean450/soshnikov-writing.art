@@ -3,7 +3,8 @@ mixin bookBlock(id, headline, desc, mainLink, mainText)
         a(href=mainLink)
             div.book-block__cover
                 img(src=`http://soshnikov.space/img/${id}-og.jpg`)
-            div.book-block__headline=headline
+            div.book-block__headline
+                h3=headline
             div.book-block__desc=desc
             div.book-block__links
                 a.book-block__button(href=mainLink)=mainText

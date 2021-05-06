@@ -1,40 +1,38 @@
 @import "colors";
 
-$fontSmall: 20px/20px 'EB Garamond', 'Arial', Georgia, serif;
-$fontMedium: 20px/23px 'EB Garamond', 'Arial', Georgia, serif;
-
-$fontMain: 24px/32px 'EB Garamond', 'Arial', Georgia, serif;
-$fontMainMobile: 20px/29px 'EB Garamond', 'Arial', Georgia, serif;
-
-$fontLarge: 32px/40px 'EB Garamond', 'Arial', Georgia, serif;
-$fontLargeMobile: 24px/30px 'EB Garamond', 'Arial', Georgia, serif;
-
-$fontExtraLarge: 48px/56px 'EB Garamond', 'Arial', Georgia, serif;
+$fontSmall: 17px/30px 'KTR', 'PT Serif' Georgia, serif;
+$fontMain: 20px/32px 'KTR', 'PT Serif', Georgia, serif;
+$fontLarge: 32px/48px 'KTR', 'PT Serif', Georgia, serif;
+$fontExtraLarge: 48px/70px 'KTR', 'PT Serif', Georgia, serif;
 
 a {
-  text-decoration: none;
   color: $blue;
+  text-decoration: none;
 }
 
 h1 {
   font: $fontExtraLarge;
-  margin: 0;
+  margin: 0 0 32px 0;
   
   @include respond(mobile) {
     font: $fontLarge;
+    margin: 0 0 24px 0;
   }
 }
 
 h2 {
   font: $fontLarge;
-  margin: 0;
+  margin: 0 0 24px 0;
+
+  @include respond(mobile) {
+    font: $fontLarge;
+    margin: 0 0 16px 0;
+  }
 }
 
-h5 {
-  font: $fontSmall;
-  letter-spacing: 1px;
-  margin: 0 0 4px 0;
-  text-transform: uppercase;
+h3 {
+  font: $fontMain;
+  margin: 0 0 16px 0;
 }
 
 @font-face {

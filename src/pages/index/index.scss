@@ -9,16 +9,7 @@
   
   @include respond(mobile) {
     @include col100(0 24px 48px 24px);
-    font: $fontLargeMobile;
-  }
-  
-  p {
-    margin: 0;
-    line-height: 1.24;
-  }
-
-  &-link {
-    font-style: italic;
+    font: $fontMain;
   }
 }
 

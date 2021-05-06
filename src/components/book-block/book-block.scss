@@ -3,10 +3,15 @@
     font: $fontMain;
 
     @include respond(mobile) {
-        @include col100(0 0 32px 0, column);
+        @include col100(0 0 48px 0, column);
+    }
+
+    a {
+        color: $black;
     }
 
     &__cover {
+        margin: 0 0 24px 0;
         img {
             width: 100%;
             height: auto;
@@ -14,45 +19,38 @@
     }
 
     &__headline {
-        @include col100(16px 8px 0 0);
-        font: $fontLarge;
-        color: $black;
-        font-style: italic;
+        @include col100(0 0 0 0);
 
         @include respond(mobile) {
-            @include col100(16px 24px 0 24px);
-            font: $fontLargeMobile;
-            font-style: italic;
+            font: $fontMain;
+            @include col100(0 0 0 24px);
         }
     }
 
     &__desc {
-        @include col100(16px 0 0 0);
-        font: $fontMain;
-        color: $black;
+        @include col100(0 0 24px 0);
+        font: $fontSmall;
 
         @include respond(mobile) {
-            @include col100(8px 24px 0 24px);
-            font: $fontMainMobile;
+            @include col100(0 24px 24px 24px);
+            font: $fontSmall;
         }
     }
 
     &__links {
-        @include col100(8px 0 0 0, column);
+        @include col100(0, column);
 
         @include respond(mobile) {
-           @include col100(24px 24px 0 24px);
+           @include col100(0 24px);
         }
-
         
     }
 
     &__button {
         @include colauto(8px 0 10px 0);
+        font: $fontSmall;
         line-height: 1;
-        background-color: $white;
-        color: $blue;
-        border-radius: 3px;
-        margin: 0 0 8px 0;
+        color: $blue !important;
+        padding: 0;
     }
 }

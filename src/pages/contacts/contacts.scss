@@ -10,6 +10,7 @@
 
     @include respond(mobile) {
       @include col100(16px 24px 24px 24px, column);
+      font: $fontMain;
     }
   }
 }

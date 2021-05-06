@@ -20,22 +20,18 @@ p {
   margin: 0 0 24px 0;
   
   @include respond(mobile) {
-    margin: 0 0 24px 0;
+    margin: 0 0 16px 0;
   }
+}
+
+hr {
+  border: 2px dashed $blue;
+  width: 24px;
+  margin: 16px 0 24px 0;
 }
 
 ol {
   margin: 0 0 24px 0;
-}
-
-.body {
-  &_dark {
-    background-color: $white;
-  }
-  
-  &_light {
-    background-color: $white;
-  }
 }
 
 .content {
@@ -45,11 +41,25 @@ ol {
   grid-template-rows: repeat(3, auto);
 }
 
+.stories {
+  &__content {
+    grid-column-start: 1;
+    grid-column-end: 21;
+    
+    @include col100(0 56px 56px 56px, row);
+    flex-wrap: wrap;
+
+    @include respond(mobile) {
+      @include col100(16px 0 0 0, column);
+    }
+  }
+}
+
 .tabs {
   grid-column-start: 1;
   grid-column-end: 21;
 
-  @include col100(8px 32px);
+  @include col100(0 32px 32px 32px);
 
   @include respond(mobile) {
     @include col100(8px 24px 16px 24px);
@@ -63,6 +73,10 @@ ol {
 
   @include respond(mobile) {
     @include col100(0 24px, column);
+  }
+
+  h2 {
+    margin: 0 0 6px 0;
   }
 }
 
