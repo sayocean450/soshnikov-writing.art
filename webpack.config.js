@@ -19,7 +19,9 @@ const PATHS = {
   distImg:   path.join(__dirname, './docs/img'),
   styles:    path.join(__dirname, './src/scss'),
   fonts:     path.join(__dirname, './src/fonts'),
-  distFonts: path.join(__dirname, './docs/fonts')
+  distFonts: path.join(__dirname, './docs/fonts'),
+  pdf:       path.join(__dirname, './src/observer.pdf'),
+  distPdf: path.join(__dirname, './docs/observer.pdf')
 };
 
 /* ПЛАГИНЫ */
@@ -37,6 +39,10 @@ let plugins = [
       from: PATHS.fonts,
       to:   PATHS.distFonts
     },
+    {
+      from: PATHS.pdf,
+      to: PATHS.distPdf
+    }
     {
       from:   './.htaccess',
       to:     '.htaccess',
