@@ -6,9 +6,9 @@ include ../../components/article-breadcrumb/article-breadcrumb
 doctype html
 html
     +head(
-      'Наблюдатель за поражёнными',
-      'Артём Сошников рассказывает о незаслуженно забытом писателе-эмигранте Гайто Газданове и предлагает читателям один из возможных путеводителей по его романам',
-      'http://soshnikov.space/img/gazdanov-preview.jpg',
+      'Отец русского пиара',
+      'Артём Сошников рассказывает о трикстере девятнадцатого века Фаддее Булгарине его вторичном романе «Иван Выжигин», который стал дико популярен благодаря передовым пиар-технологиям того времени. Правда, ненадолго…',
+      'http://soshnikov.space/img/bulgarin-vizhigin-og.jpg',
       'story'
     )
 body.body_light
@@ -16,4 +16,4 @@ body.body_light
     div.story
         div.story__content
             +article-breadcrumb('рецензии', 'articles')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/publications/blacktrope/bulgarin.md
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/blacktrope/bulgarin.md
