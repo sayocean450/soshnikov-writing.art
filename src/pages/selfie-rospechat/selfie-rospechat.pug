@@ -6,7 +6,7 @@ include ../../components/article-breadcrumb/article-breadcrumb
 doctype html
 html
     +head(
-      'Сошников — Пакет',
+      'Сошников — Роспечать',
       'Рассказ из цикла «Вот мои селфи»',
       'http://soshnikov.space/img/selfie-og.jpg',
       'story'
@@ -16,7 +16,7 @@ body.body_light
     div.story
         div.story__content
             +article-breadcrumb('вот мои селфи', 'selfie')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/selfie/bag.md
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/selfie/rospechat.md
             div.story__next
-                a(href="selfie-rospechat.html") читать следующий эпизод →
+                a(href="selfie-debut.html") читать следующий эпизод →
                 a(href="selfie.html#connotation") ← вернуться в содержание

@@ -1,0 +1,19 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Младописательский изъян',
+      'Читаю много современной прозы в этом году и нередко натыкаюсь в текстах на изъян, которому не желаю потворствовать…',
+      'http://soshnikov.space/img/default.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            +article-breadcrumb('черри-эссе', 'cherry-esse')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/cherry-esse/2021/junior-mistake.md
