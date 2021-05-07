@@ -35,10 +35,10 @@
 	  
 	  &-image {
 		margin: 24px 0 0 0;
-		width: 50%;
+		width: 100%;
 		
 		img {
-		  width: 50%;
+		  width: 100%;
 		  
 		  @include respond(mobile) {
 			margin: 0;
