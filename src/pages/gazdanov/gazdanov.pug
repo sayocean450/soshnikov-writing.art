@@ -1,0 +1,19 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Наблюдатель за поражёнными',
+      'Артём Сошников рассказывает о незаслуженно забытом писателе-эмигранте Гайто Газданове и предлагает читателям один из возможных путеводителей по его романам',
+      'http://soshnikov.space/img/gazdanov-preview.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            +article-breadcrumb('рецензии', 'articles')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/publications/blacktrope/gazdanov.md
