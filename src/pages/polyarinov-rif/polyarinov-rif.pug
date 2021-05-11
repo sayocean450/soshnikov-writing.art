@@ -6,7 +6,7 @@ include ../../components/article-breadcrumb/article-breadcrumb
 doctype html
 html
     +head(
-      'В дополнение к «Рифу»',
+      'Мерцание подтекстов',
       'Глядя на то, как Галина Юзефович хвалит роман «Риф» в «Вечернем Урганте», а инстаграм-блогеры восторгаются им у себя в аккаунтах, понимаешь — близок час, когда Алексея Поляринова примутся критиковать, развенчивать успех, называть переоценённым автором…',
       'http://soshnikov.space/img/polyarinov-rif-og.jpg',
       'story'
@@ -16,4 +16,4 @@ body.body_light
     div.story
         div.story__content
             +article-breadcrumb('рецензии', 'articles')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/blacktrope/polyarinov-rif.md
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/publications/blacktrope/polyarinov-rif.md
