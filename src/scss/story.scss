@@ -6,89 +6,84 @@
 	@include respond(mobile) {
 		@include col100(0 24px, column, flex-start, center);
 	}
-	
-	&__content {
-	  @include colauto(0, column, flex-start, center);
-	  align-content: center;
-	  max-width: 700px;
-	  text-transform: none;
-	  font: $fontMain;
-	  margin: 0 0 48px 0;
-	  
-	  @include respond(mobile) {
-		@include col100(0, column);
-		margin: 0 0 48px 0;
-		font: $fontSmall;
-	  }
-	  
-	  h2 {
-		margin: 24px 0 32px 0;
-		
-		+ .story__annotation {
-		  margin: -16px 0 32px 0;
-		}
-	  }
-	  
-	  a {
-		color: $blue;
-	  }
 
-	  &-secondary-info {
-		font: $fontSmall;
-		padding: 8px 16px 8px 16px;
-		border-left: 4px solid $blue;
-	}
-	  
-	  &-image {
-		margin: 0 0 0 0;
-		width: 100%;
-		
-		img {
-		  width: 100%;
-		  
-		  @include respond(mobile) {
+	&__content {
+		@include colauto(0, column, flex-start, center);
+		align-content: center;
+		max-width: 700px;
+		text-transform: none;
+		font: $fontMain;
+		margin: 0 0 48px 0;
+
+		@include respond(mobile) {
+			@include col100(0, column);
+			margin: 0 0 48px 0;
+			font: 19px/30px "KTR", "PT Serif" Georgia, serif;
+		}
+
+		h2 {
+			margin: 24px 0 32px 0;
+
+			+ .story__annotation {
+				margin: -16px 0 32px 0;
+			}
+		}
+
+		a {
+			color: $blue;
+		}
+
+		&-secondary-info {
+			font: $fontSmall;
+			padding: 8px 16px 8px 16px;
+			border-left: 4px solid $blue;
+		}
+
+		&-image {
 			margin: 0;
 			width: 100%;
-		  }
+
+			@include respond(mobile) {
+				width: 100%;
+				font: 10px;
+			}
+
+			img {
+				width: 100%;
+
+				@include respond(mobile) {
+					margin: 0;
+					width: 100%;
+				}
+			}
 		}
-		
-		@include respond(mobile) {
-		  margin: 14px -32px 0 0;
-		  width: 100%;
-		}
-		
+
 		&-caption {
-		  margin: 4px 0 24px 0;
-		  font: $fontSmall;
-		  color: $black;
-		  
-		  @include respond(mobile) {
-			margin: 4px 0;
-			text-align: center;
-			font-size: 12px;
-		  }
+			@include respond(mobile) {
+				font-size: 16px;
+				line-height: 1.5;
+			}
 		}
-	  }
 	}
 
 	&__annotation {
 		font: $fontSmall;
-	  }
-	
+	}
+
 	&__next {
 		@include col100(0 0 24px 0, row, space-between);
 		font: $fontMain;
-		
+
 		@include respond(mobile) {
-		  @include col100(0 0 24px 0, column, space-between);
+			@include col100(0 0 24px 0, column, space-between);
 		}
-		
+
 		a {
-		  color: $blue;
-		  
-		  @include respond(mobile) {
-			margin: 0 0 24px 0;
-		  }
+			color: $blue;
+
+			@include respond(mobile) {
+				margin: 0 0 24px 0;
+			}
 		}
-	  }
+	}
 }
