@@ -1,0 +1,19 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      '«Привал», сезон первый',
+      'Десять русских реалистических рассказов, на которые не жалко потратить вечер выходного дня',
+      'http://soshnikov.space/img/rest-01-preview.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            +article-breadcrumb('рецензии', 'articles')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/publications/blacktrope/rest-01.md
